@@ -8,9 +8,4 @@ layout: default
 
 ## The Met Collection
 
-Lorem ipsum dolor sit amet.
-
-Adipiscit consectetur.
-
-
-
+Travel around the world and across 5,000 years of history through {{departements.objectsSize}} works of art presented in {{departements.size}} collections !

@@ -1,0 +1,7 @@
+<div style="display: flex; flex-direction: row; flex-wrap: wrap;" >
+    {% for object in item.objects %}
+    <div style="background-image: url('{{object.primaryImageSmall}}');height: 200px;width: 200px;background-size:contain;background-repeat: no-repeat;">
+        <p>{{object.title}}</p>
+    </div>
+    {% endfor %}
+</div>
