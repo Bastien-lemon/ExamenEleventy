@@ -1,0 +1,7 @@
+{
+    "siteName": "Metropolitan Museum of Art",
+    "apiBaseUrl": "https://collectionapi.metmuseum.org/public/collection/v1/",
+    "departmentsUrl": "departments",
+    "objectsUrl": "objects",
+    "maxObjectsPerDepartment": 20
+}

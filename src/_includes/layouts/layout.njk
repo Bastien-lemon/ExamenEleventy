@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title | default(siteConfig.siteName) }}</title>
+
+    {# App styles #}
+    <link rel="stylesheet" href="/css/styles.css" /> 
+</head>
+
+<body class="text-stone-500 bg-white">
+    <div class="container mx-auto lg:flex space-x-6 lg:min-h-screen">
+        <aside class="px-4 py-4 bg-stone-100 lg:w-[600px] w-full">
+        {% include 'components/navigation.njk' %}
+        </aside>
+
+        <main class="py-2 w-full">
+            {% block content %}
+            {{ content | safe }}
+            {% endblock %}
+        </main>
+    </div>
+</body>
+</html>

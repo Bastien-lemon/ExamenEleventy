@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* MAIN */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* HEADERS */
+
+h1, h2, h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    @apply text-9xl text-stone-200 lg:mb-8 lg:mt-8 pb-4;
+}
+
+h2 {
+    @apply text-5xl  lg:mb-6 lg:mt-8 italic;
+}
+
+h3 {
+    @apply text-3xl text-stone-300 mb-4 italic;
+}
+
+p {
+    @apply text-lg mb-4;
+}
+
+/* FORMAT */
+
+strong {
+    @apply font-bold;
+}
+
+em {
+    @apply italic;
+}
+
+/* LINKS */
+
+a {
+    @apply text-stone-500;
+}
+
+/* LISTS */
+
+ul {
+    @apply list-disc ms-4 text-lg;
+}
+
+ul p {
+    @apply mb-0;
+}

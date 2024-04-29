@@ -1,0 +1,32 @@
+{
+  "name": "met",
+  "version": "1.0.0",
+  "description": "Metropolitan Museum of Art",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy",
+    "debug": "DEBUG=Eleventy* npx @11ty/eleventy --serve",
+    "clean": "rm -rf _site",
+    "cleancache": "rm -rf .cache",
+    "index": "ENVIRONMENT=index npx @11ty/eleventy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "markdown"
+  ],
+  "author": "Hervé Inisan",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "autoprefixer": "^10.4.18",
+    "cssnano": "^6.1.0",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1"
+  },
+  "dependencies": {
+    "@11ty/eleventy-fetch": "^4.0.1",
+    "@11ty/eleventy-img": "^4.0.2",
+    "dotenv": "^16.4.5"
+  }
+}
