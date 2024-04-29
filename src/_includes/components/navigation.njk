@@ -1,6 +1,6 @@
 {# Navigation #}
 <div style="display: flex; flex-direction: column;">
-{% for departement in departements.elements %}
-<a href="/department/{{departement.departmentId}}"><strong>{{departement.displayName}}</strong> ({{departement.total}})</a>
-{% endfor %}
+    {% for departement in departements.elements %}
+    <a href="/department/{{departement.departmentId}}"><strong>{{departement.displayName}}</strong> ({{departement.total}})</a>
+    {% endfor %}
 </div>
